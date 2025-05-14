@@ -7,7 +7,6 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.safeContentPadding
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
@@ -22,7 +21,8 @@ import androidx.navigation.NavController
 import com.jetpack.compse.example.R
 
 val exampleList = listOf(
-    "Simple Text Greetings",
+    "Simple Text",
+    "Text Field Examples",
 )
 
 @Composable
@@ -32,7 +32,6 @@ fun MainScreen(
     Column(
         modifier = Modifier
             .fillMaxWidth()
-            .safeContentPadding()
             .padding(24.dp),
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.spacedBy(16.dp)
