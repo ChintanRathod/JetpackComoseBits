@@ -23,6 +23,7 @@ import com.jetpack.compse.example.R
 val exampleList = listOf(
     "Simple Text",
     "Text Field Examples",
+    "Dialog Examples",
 )
 
 @Composable

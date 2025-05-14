@@ -9,6 +9,9 @@ import androidx.compose.ui.Modifier
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.jetpack.compse.example.dialog.AlertDialogWithIconSample
+import com.jetpack.compse.example.dialog.BasicAlertDialogSample
+import com.jetpack.compse.example.dialog.DialogScreen
 import com.jetpack.compse.example.text.BasicTextFieldExample
 import com.jetpack.compse.example.text.EmailTextFieldWithValidation
 import com.jetpack.compse.example.text.PasswordTextFieldExample
@@ -60,6 +63,18 @@ class MainActivity : ComponentActivity() {
                         EmailTextFieldWithValidation()
                     }
 
+                    /*
+                    Navigation for Text Field Examples
+                     */
+                    composable("example3") {
+                        DialogScreen(navController = navController)
+                    }
+                    composable("dialog1") {
+                        BasicAlertDialogSample(navController)
+                    }
+                    composable("dialog2") {
+                        AlertDialogWithIconSample(navController)
+                    }
                 }
             }
         }
