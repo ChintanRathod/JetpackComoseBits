@@ -38,6 +38,12 @@ val textFieldExampleList = listOf(
     "Email Text Field",
 )
 
+/*
+Following composable is to create a list of buttons mentioned
+in 'textFieldExampleList'.
+It will iterate and create buttons where each button do call
+a specific composable to demonstrate the example
+ */
 @Composable
 fun TextFieldScreen(
     navController: NavController

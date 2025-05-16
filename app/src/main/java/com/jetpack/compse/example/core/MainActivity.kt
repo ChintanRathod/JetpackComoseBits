@@ -29,11 +29,18 @@ class MainActivity : ComponentActivity() {
 
             val navController = rememberNavController()
 
+            /**
+             * Application theme
+             */
             JetpackComposeBitsTheme {
 
+                /*
+                Navigation host to manage screen navigation
+                 */
                 NavHost(
                     modifier = Modifier.safeContentPadding(),
                     navController = navController,
+                    // Default launch is mainScreen
                     startDestination = "mainScreen"
                 ) {
                     composable("mainScreen") {
@@ -64,7 +71,7 @@ class MainActivity : ComponentActivity() {
                     }
 
                     /*
-                    Navigation for Text Field Examples
+                    Navigation for Dialog Examples
                      */
                     composable("example3") {
                         DialogScreen(navController = navController)

@@ -42,10 +42,19 @@ val dialogExampleList = listOf(
     "Alert Dialog with Icon",
 )
 
+/*
+Following composable is to create a list of buttons mentioned
+in 'dialogExampleList'.
+It will iterate and create buttons where each button do call
+a specific composable to demonstrate the example
+ */
 @Composable
 fun DialogScreen(
     navController: NavController
 ) {
+    /*
+    Create a column which can hold children for multiple button components
+     */
     Column(
         modifier = Modifier
             .fillMaxWidth()
@@ -54,6 +63,9 @@ fun DialogScreen(
         verticalArrangement = Arrangement.spacedBy(16.dp)
     ) {
         dialogExampleList.forEachIndexed { index, title ->
+            /*
+            Create a row composable to hold a text
+             */
             Row(
                 modifier = Modifier
                     .fillMaxWidth()

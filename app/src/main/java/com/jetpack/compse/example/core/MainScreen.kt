@@ -26,6 +26,12 @@ val exampleList = listOf(
     "Dialog Examples",
 )
 
+/*
+Following composable is to create a list of buttons mentioned
+in 'exampleList'.
+It will iterate and create buttons where each button do call
+a specific composable to demonstrate the example
+ */
 @Composable
 fun MainScreen(
     navController: NavController
