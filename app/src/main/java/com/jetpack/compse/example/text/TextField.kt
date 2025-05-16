@@ -94,7 +94,7 @@ fun BasicTextFieldExample() {
 
             value = text,
             onValueChange = { text = it },  // Update state when user types
-            label = { Text("Enter your email") },  // Hint text above field
+            label = { Text("Enter your name") },  // Hint text above field
             singleLine = true  // Limit to one line
         )
     }
