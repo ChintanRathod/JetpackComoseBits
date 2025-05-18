@@ -9,6 +9,11 @@ import androidx.compose.ui.Modifier
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.jetpack.compse.example.buttons.ButtonSample
+import com.jetpack.compse.example.buttons.ButtonScreen
+import com.jetpack.compse.example.buttons.ButtonWithIconSample
+import com.jetpack.compse.example.buttons.ElevatedButtonSample
+import com.jetpack.compse.example.buttons.OutlinedButtonSample
 import com.jetpack.compse.example.dialog.AlertDialogWithIconSample
 import com.jetpack.compse.example.dialog.BasicAlertDialogSample
 import com.jetpack.compse.example.dialog.DialogScreen
@@ -81,6 +86,25 @@ class MainActivity : ComponentActivity() {
                     }
                     composable("dialog2") {
                         AlertDialogWithIconSample(navController)
+                    }
+
+                    /*
+                    Navigation for Button Examples
+                     */
+                    composable("example4") {
+                        ButtonScreen(navController = navController)
+                    }
+                    composable("button1") {
+                        ButtonSample()
+                    }
+                    composable("button2") {
+                        ButtonWithIconSample()
+                    }
+                    composable("button3") {
+                        OutlinedButtonSample()
+                    }
+                    composable("button4") {
+                        ElevatedButtonSample()
                     }
                 }
             }

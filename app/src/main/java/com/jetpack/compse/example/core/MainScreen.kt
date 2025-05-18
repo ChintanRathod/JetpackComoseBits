@@ -24,6 +24,7 @@ val exampleList = listOf(
     "Simple Text",
     "Text Field Examples",
     "Dialog Examples",
+    "Button Examples",
 )
 
 /*
