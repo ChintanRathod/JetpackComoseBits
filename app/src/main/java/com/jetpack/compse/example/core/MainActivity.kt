@@ -14,6 +14,8 @@ import com.jetpack.compse.example.buttons.ButtonScreen
 import com.jetpack.compse.example.buttons.ButtonWithIconSample
 import com.jetpack.compse.example.buttons.ElevatedButtonSample
 import com.jetpack.compse.example.buttons.OutlinedButtonSample
+import com.jetpack.compse.example.chip.BrandsFilterChip
+import com.jetpack.compse.example.chip.ChipScreen
 import com.jetpack.compse.example.dialog.AlertDialogWithIconSample
 import com.jetpack.compse.example.dialog.BasicAlertDialogSample
 import com.jetpack.compse.example.dialog.DialogScreen
@@ -105,6 +107,16 @@ class MainActivity : ComponentActivity() {
                     }
                     composable("button4") {
                         ElevatedButtonSample()
+                    }
+
+                    /*
+                    Navigation for Chip Examples
+                     */
+                    composable("example5") {
+                        ChipScreen(navController = navController)
+                    }
+                    composable("chip1") {
+                        BrandsFilterChip()
                     }
                 }
             }
